@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Maria2009gift/js-hard-18/static/css/main.f855e6bc.css",
+    "main.js": "/Maria2009gift/js-hard-18/static/js/main.0a9575d4.js",
+    "index.html": "/Maria2009gift/js-hard-18/index.html",
+    "main.f855e6bc.css.map": "/Maria2009gift/js-hard-18/static/css/main.f855e6bc.css.map",
+    "main.0a9575d4.js.map": "/Maria2009gift/js-hard-18/static/js/main.0a9575d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.0a9575d4.js"
+  ]
+}
