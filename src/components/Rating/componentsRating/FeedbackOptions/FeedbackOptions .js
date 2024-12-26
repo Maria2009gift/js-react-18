@@ -1,9 +1,12 @@
 import Section from "../Section/Section";
+import { TextContext } from "../../Rating";
+import { useContext } from "react";
 
 function FeedbackOptions({ addGood, addNeutral, addBad }) {
+  const text = useContext(TextContext)
   return (
     <Section
-      title="Please leave feedback"
+      title={text}
       children={
         <>
           <button onClick={addGood}>Good</button>

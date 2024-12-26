@@ -1,8 +1,9 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, createContext } from "react";
 import React from "react";
 
 import FeedbackOptions from "./componentsRating/FeedbackOptions/FeedbackOptions ";
 import Statistic from "./componentsRating/Statistic/Statistic";
+export const TextContext = createContext()
 
 function Rating() {
   const [good, setGood] = useState(0);
@@ -12,6 +13,8 @@ function Rating() {
   const goodRef = useRef()
   const neutralRef = useRef()
   const badRef = useRef()
+
+  const [text, useText] = useState("Please leave feedback")
 
   useEffect(()=> {
     if (good !== 0) {
@@ -68,11 +71,13 @@ function Rating() {
 
   return (
     <>
-      <FeedbackOptions
-        addGood={goodRating}
-        addNeutral={neutralRating}
-        addBad={badRating}
-      />
+      <TextContext.Provider value={text}>
+        <FeedbackOptions
+          addGood={goodRating}
+          addNeutral={neutralRating}
+          addBad={badRating}
+        />
+      </TextContext.Provider>
 
       <Statistic
         good={good}
