@@ -2,7 +2,7 @@
   "name": "js-react-18",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Maria2009gift/js-hard-18",
+  "homepage": "https://github.com/Maria2009gift/js-react-18",
   "dependencies": {
     "cra-template": "1.2.0",
     "gh-pages": "^6.2.0",
